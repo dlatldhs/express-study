@@ -8,6 +8,10 @@ app.get('/', function (req, res) {
 app.get('/hi', function (req, res) {
     res.send('hi my name is Im Si On!')
   })
+
+app.get('/bye', function (req, res) {
+    res.send('Good bye~')
+  })
 app.listen(3000,()=>{
     console.log('server start!!')
 })
