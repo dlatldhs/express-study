@@ -1,3 +1,3 @@
 #!/bin/bash
-cd /home/ubuntu/dlatldhs/server
+cd /home/ubuntu/express-study
 git pull
