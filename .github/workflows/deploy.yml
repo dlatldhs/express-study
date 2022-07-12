@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Run scripts in server
-        uses: appleboy/ssh-action@main
+        uses: appleboy/ssh-action@master
         with:
           key: ${{ secrets.SSH_KEY }}
           host: ${{ secrets.HOST }}
@@ -24,5 +24,3 @@ jobs:
           script: |
             cd express-study
             git pull
-            pm2 stop index.js
-            pm2 start index.js
