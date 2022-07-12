@@ -12,6 +12,12 @@ app.get('/hi', function (req, res) {
 app.get('/bye', function (req, res) {
     res.send('Good bye~')
   })
+
+app.get('/testing', function (req, res) {
+    res.send('Good testing!')
+  })
+  
+
 app.listen(3000,()=>{
     console.log('server start!!')
 })
